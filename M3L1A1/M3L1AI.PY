@@ -1,0 +1,28 @@
+file = open("Football_club.txt", "w")
+file.write("1.Pass ball\n")    
+file.write("2.Save the ball\n")
+file.write("3.Play Match\n")
+file.close()   
+print("Football_club saved to Football_club.txt!")
+
+file = open("Football_club.txt", "r")
+content = file.read()
+print("\n=== My Football club ===")
+print(content)
+file.close()
+
+file = open("Football_club.txt", "r")
+lines = file.readlines()
+print(f"you have {len(lines)} Football club at 18:00")
+file.close()
+
+file = open("Football_club.txt", "a")
+file.write("4.Practice\n")    
+file.write("5.Rest\n")
+file.close()  
+print("\n2 more instructions added!")
+
+file = open("Football_club.txt", "r")
+("\n=== !INSTRUCTIONS UPDATED! ===")
+print(file.read())
+file.close()  
